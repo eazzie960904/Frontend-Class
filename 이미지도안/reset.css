@@ -1,0 +1,30 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  height: 800px;
+}
+
+.blog-section {
+  height: 800px;
+}
+
+.sec-tit {
+  color: #7e6d58;
+  text-align: center;
+  margin: 50px;
+}
