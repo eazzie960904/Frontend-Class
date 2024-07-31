@@ -1,0 +1,44 @@
+/*reset*/
+@import url(./reset.css);
+
+/*footer*/
+footer {
+  .container {
+    background: #333;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 404px;
+    .footer_content {
+      width: 1280px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 50px;
+      .footer1 {
+        display: flex;
+        justify-content: space-between;
+        .footer1_1 ul {
+          display: flex;
+          gap: 20px;
+        }
+      }
+      .footer2 ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .footer3 {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        .footer3-2 {
+          display: flex;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}
