@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+:root {
+  font-size: 10px;
+}
+
+body {
+  font: 400 1.4rem/1 "Noto Sans KR", sans-serif;
+  letter-spacing: -1px;
+  color: #111;
+}
+
+.inner {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+// reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+$fontSize: (
+  font-extra-small: 1.2rem,
+  font-samll: 1.4rem,
+  font-medium: 1.6rem,
+  font-large: 1.8rem,
+  font-extra-large: 2rem,
+);
+
+input {
+  border: none;
+  padding-left: 10px;
+  transition: all 0.3s;
+  &::placeholder {
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  &:focus {
+    outline: none;
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+button {
+  background: transparent;
+  border: none;
+  font: 400 1.3rem/1 "Noto Sans KR", sans-serif;
+}
+
+footer {
+  background: #3a3a3a;
+  color: #fff;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    height: 404px;
+    .footer-upper {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.4rem;
+      .footer-upper-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .footer-company-guide ul {
+          display: flex;
+          gap: 20px;
+        }
+        .footer-company-info ul {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    }
+    .footer-lower {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      .footer-lower-logo {
+        width: 180px;
+        height: 20px;
+        display: flex;
+        gap: 20px;
+        i {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+// responsive
+@media screen and (max-width: 1280px) {
+  .inner {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  footer {
+    .inner {
+      .footer-upper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        gap: 20px;
+        .footer-upper-info {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          .footer-company-guide ul {
+            gap: 10px;
+            flex-wrap: wrap;
+          }
+        }
+      }
+      .footer-lower {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :root {
+    font-size: 8px;
+  }
+}
