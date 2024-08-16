@@ -52,8 +52,8 @@ vscode> 터미널을 오픈(*ctrl+`)
 gitbash로 클릭
 
 1) git 초기화
-- git innit(*최초)
-> git innit
+- git init(*최초)
+> git init
 (.git =>staging area)
 
 2) 나의 로컬 git & 원격 git-hub
