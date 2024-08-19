@@ -1,26 +1,26 @@
-// 객체생성 => 선언
+객체생성 => 선언
 
-// const book1 = {
-//   title: "자바스크립트",
-//   level: "normal",
-//   study: "done",
-// };
+const book1 = {
+  title: "자바스크립트",
+  level: "normal",
+  study: "done",
+};
 
 // 객체 안에 담겨있는 데이터를 찾아
-//프로퍼티(속성)에 접근 2가지 방법
+// 프로퍼티(속성)에 접근 2가지 방법
 // 1) 온점표기법
 // 2) 대괄호표기법
 
-// console.log(book1.title);
-// console.log(book1["level"]);
+console.log(book1.title);
+console.log(book1["level"]);
 
-// book1.study = "ready";
+book1.study = "ready";
 
-// console.log(book1);
+console.log(book1);
 
-// book1.master = "David";
+book1.master = "David";
 
-// console.log(book1);
+console.log(book1);
 
 // JS 어딘가에 Class 생성자함수를 활용해서 이미 누군가가 객체를 만들어 놓았음
 
@@ -30,21 +30,21 @@
 
 // 최초에 선언한 변수의 값으로 할당
 
-// let book2 = new Object();
-// console.log(typeof book2);
+let book2 = new Object();
+console.log(typeof book2);
 
-// book2.title = "타입스크립트";
-// book2.author = "김지선";
-// book2.bestSeller = "YES";
+book2.title = "타입스크립트";
+book2.author = "김지선";
+book2.bestSeller = "YES";
 
-// console.log(book2);
+console.log(book2);
 
-// // let book3 = new Array();
-// // console.log(typeof book3);
+// let book3 = new Array();
+// console.log(typeof book3);
 
-// delete book2.bestSeller;
+delete book2.bestSeller;
 
-// console.log(book2);
+console.log(book2);
 
 // 객체중첩
 const student = {
