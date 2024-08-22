@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Juliien",
+        "major": "영문학과",
+        "grade":2
+    },
+    {
+        "name": "Judy",
+        "major": "피아노 학과",
+        "grade": 3
+    },
+    {
+        "name": "David",
+        "major":"경영학과",
+        "grade":4
+    },
+    {
+        "name": "Eazzie",
+        "major":"컴퓨터과",
+        "grade":2
+    }
+
+]
