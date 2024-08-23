@@ -1,5 +1,12 @@
 {
+<<<<<<< HEAD
   "name": "David",
   "major": "computer",
   "grade": 2
 }
+=======
+    "name": "David",
+    "major": "computer",
+    "grade":2
+}
+>>>>>>> 43aa7a9512d88c620ea1c429588293603b22cbf1
