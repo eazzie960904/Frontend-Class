@@ -1,6 +1,7 @@
 const xhr = new XMLHttpRequest();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 xhr.open("GET", "student2.json", true);
 xhr.send();
 
@@ -19,6 +20,8 @@ xhr.onreadystatechange = function () {
   }
 };
 =======
+=======
+>>>>>>> b3f65faee7d6168354496c59f6c8dfa094991d9d
 xhr.open("GET", "student2.json");
 xhr.send();
 
@@ -34,5 +37,9 @@ xhr.onreadystatechange = function(){
         </ul>
         `;
     }
+<<<<<<< HEAD
 };
 >>>>>>> 43aa7a9512d88c620ea1c429588293603b22cbf1
+=======
+};
+>>>>>>> b3f65faee7d6168354496c59f6c8dfa094991d9d

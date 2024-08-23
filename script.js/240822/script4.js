@@ -2,6 +2,7 @@ const form = document.querySelector("form");
 const input = document.querySelector("#userNumber");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -23,6 +24,8 @@ form.addEventListener("submit", (e) => {
   }
 })
 =======
+=======
+>>>>>>> b3f65faee7d6168354496c59f6c8dfa094991d9d
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
 
@@ -41,5 +44,9 @@ form.addEventListener("submit",(e)=>{
     } finally{
         input.value="";
     }
+<<<<<<< HEAD
 });
 >>>>>>> 43aa7a9512d88c620ea1c429588293603b22cbf1
+=======
+});
+>>>>>>> b3f65faee7d6168354496c59f6c8dfa094991d9d

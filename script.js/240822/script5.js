@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 const url = "https://reqres.in/api/products/10";
 const result = document.querySelector("#result")
 
@@ -20,6 +21,8 @@ xhr.onreadystatechange = function () {
     `;
   };
 =======
+=======
+>>>>>>> b3f65faee7d6168354496c59f6c8dfa094991d9d
 const url ="http://reqres.in/api/products/10";
 const result = document.querySelector("#result");
 
@@ -38,5 +41,8 @@ xhr.onreadystatechange=function(){
         <p>상품색상 : ${product.data.color}</p>
         `;
     }
+<<<<<<< HEAD
 >>>>>>> 43aa7a9512d88c620ea1c429588293603b22cbf1
+=======
+>>>>>>> b3f65faee7d6168354496c59f6c8dfa094991d9d
 };
