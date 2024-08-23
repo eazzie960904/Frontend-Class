@@ -4,6 +4,7 @@ const tokenTimer = document.querySelector("#token_timer");
 const tokenConfirmButton = document.querySelector("#token_timer_confirmBtn");
 const signupButton = document.querySelector("#signup_button");
 
+
 const changePhone1 = () => {
   const phone1 = document.querySelector("#phone1").value;
   if (phone1.length === 3) {
