@@ -1,25 +1,25 @@
-const step1=(callback)=>{
-  setTimeout(()=>{
-    console.log("피자도우 준비");
-    callback();
-  },2000);
-};
+// const step1=(callback)=>{
+//   setTimeout(()=>{
+//     console.log("피자도우 준비");
+//     callback();
+//   },2000);
+// };
 
-const step2 = (callback)=>{
-  setTimeout(()=>{
-    console.log("토핑완료");
-    callback();
-  },2000);
-};
+// const step2 = (callback)=>{
+//   setTimeout(()=>{
+//     console.log("토핑완료");
+//     callback();
+//   },2000);
+// };
 
-const step3 = (callback)=>{
-  setTimeout(()=>{
-    console.log("굽기완료");
-    callback();
-  },2000);
-};
+// const step3 = (callback)=>{
+//   setTimeout(()=>{
+//     console.log("굽기완료");
+//     callback();
+//   },2000);
+// };
 
-console.log("피자를 주문합니다");
+// console.log("피자를 주문합니다");
 
 step1(()=>{
   step2(()=>{
