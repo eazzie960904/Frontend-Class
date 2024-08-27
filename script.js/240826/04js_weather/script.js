@@ -16,6 +16,7 @@ const getCurrentWeather = (latitude, longitude) => {
         case "Clouds":
           weatherName = "구름";
           break;
+        case "Rain":
           weatherName = "비";
           break;
       }
