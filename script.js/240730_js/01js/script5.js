@@ -14,9 +14,9 @@
 // y = y%x;
 // y %=x;
 
-// let str = "<r border='1'>";
+// let str = "<table border='1'>";
 // str += "<tr>";
-// str += "<td>1<td><td>2<td><td>3<td>";
+// str += "<td>1</td><td>2</td><td>3</td>";
 // str += "</tr>";
 // str += "</table>";
 

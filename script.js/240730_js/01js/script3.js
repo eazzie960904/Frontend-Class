@@ -14,23 +14,23 @@
 
 // alert(`${name}님은 ${result}`);
 
-// const traffic = Number(prompt("교통비입력"));
-// const food = Number(prompt("식대 입력"));
-// const drink = Number(prompt("음료비"));
+const traffic = Number(prompt("교통비입력"));
+const food = Number(prompt("식대 입력"));
+const drink = Number(prompt("음료비"));
 
-// let arr = [];
-// for (let i = 0; i < 3; i++) {
-//   const userNum = Number(prompt("교통비, 식대. 음료비 순으로 입력!"));
-//   arr.push(userNum);
-// }
+let arr = [];
+for (let i = 0; i < 3; i++) {
+  const userNum = Number(prompt("교통비, 식대. 음료비 순으로 입력!"));
+  arr.push(userNum);
+}
 
-// const [traffic, food, drink] = arr;
-// const sum = traffic + food + drink;
+const [traffic, food, drink] = arr;
+const sum = traffic + food + drink;
 
-// if (isNaN(sum) || sum === 0) {
-//   alert("잘못입력했습니다!");
-// } else if (sum <= 10000) {
-//   alert("예산관리 잘하셨습니다.");
-// } else {
-//   alert("예산관리잘하세요");
-// }
+if (isNaN(sum) || sum === 0) {
+  alert("잘못입력했습니다!");
+} else if (sum <= 10000) {
+  alert("예산관리 잘하셨습니다.");
+} else {
+  alert("예산관리잘하세요");
+}
