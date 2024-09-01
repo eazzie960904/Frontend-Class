@@ -24,7 +24,7 @@ const loop = () => {
   box.style.top = `${targetY}px`;
   box.style.left = `${targetX}px`;
 
-  window.removeEventListener(loop);
+  window.requestAnimationFrame(loop);
 };
 
 loop();
