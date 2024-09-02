@@ -1,0 +1,28 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Playwrite DK Loopet", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sec-tit {
+  color: #7e6d58;
+  text-align: center;
+  margin: 50px;
+  margin-top: 100px;
+}

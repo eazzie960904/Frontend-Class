@@ -1,0 +1,49 @@
+[
+<<<<<<< HEAD
+<<<<<<< HEAD
+  {
+    "name": "Jullien",
+    "major": "영문학과",
+    "grade": 2
+  },
+  {
+    "name": "Judy",
+    "major": "피아노학과",
+    "grade": 3
+  },
+  {
+    "name": "Jullien",
+    "major": "경영학과",
+    "grade": 4
+  }
+]
+=======
+=======
+>>>>>>> b3f65faee7d6168354496c59f6c8dfa094991d9d
+    {
+        "name": "Juliien",
+        "major": "영문학과",
+        "grade":2
+    },
+    {
+        "name": "Judy",
+        "major": "피아노 학과",
+        "grade": 3
+    },
+    {
+        "name": "David",
+        "major":"경영학과",
+        "grade":4
+    },
+    {
+        "name": "Eazzie",
+        "major":"컴퓨터과",
+        "grade":2
+    }
+
+<<<<<<< HEAD
+]
+>>>>>>> 43aa7a9512d88c620ea1c429588293603b22cbf1
+=======
+]
+>>>>>>> b3f65faee7d6168354496c59f6c8dfa094991d9d
