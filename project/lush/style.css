@@ -271,6 +271,7 @@ main {
   }
 }
 .symbol {
+  width: 100%;
   position: relative;
   padding: 70px;
   display: flex;
@@ -339,6 +340,11 @@ main {
     .footer1_1 {
       font-weight: bold;
     }
+    .footer_sub {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
     .footer1_2 {
       border: 1px solid #fff;
       width: 130px;
@@ -395,6 +401,14 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
+  main {
+    .main_desc {
+      font-size: 70px;
+      font-weight: bold;
+      color: white;
+      position: absolute;
+    }
+  }
   .preview {
     .preview_subttl {
       text-align: center;
@@ -420,16 +434,20 @@ main {
     flex-direction: column;
   }
   .symbol {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 10px;
     .symbol_1 {
       display: flex;
       flex-direction: column;
+      gap: 20px;
     }
     .symbol_2 {
       display: flex;
       flex-direction: column;
+      gap: 20px;
     }
   }
   .footer {
