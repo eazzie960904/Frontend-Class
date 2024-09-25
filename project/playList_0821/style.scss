@@ -31,7 +31,7 @@ main {
       font-size: 36px;
       line-height: 1.4;
       letter-spacing: 1px;
-      color: #fff;
+      color: lightslategrey;
     }
     span {
       font-size: 12px;
@@ -78,13 +78,13 @@ main {
       .inner {
         width: 100%;
         height: 100%;
-        background: #f0f7ff;
+        background: #eee;
         padding: 5vh 2.5vw 8vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: space-between;
-        border-radius: 10px;
+        border-radius: 20px;
         box-shadow: 10px 10px 20px rgba($color: #000000, $alpha: 0.1);
         opacity: 0.6;
         transform: scale(0.8);
@@ -152,6 +152,7 @@ main {
             li {
               opacity: 0.6;
               transition: opacity 0.3s, transform 0.3s;
+              color: lightblue;
               cursor: pointer;
               &:hover {
                 opacity: 1;
@@ -188,7 +189,7 @@ main {
     text-align: left;
     cursor: pointer;
     span {
-      color: #fff;
+      color: lightblue;
       font-size: 11px;
       line-height: 1;
       opacity: 1;
@@ -199,7 +200,7 @@ main {
       content: "";
       width: 100%;
       height: 1px;
-      background: #fff;
+      background: lightblue;
       position: absolute;
       top: 50%;
       left: 0;
@@ -211,7 +212,7 @@ main {
       content: "";
       width: 100%;
       height: 1px;
-      background: #fff;
+      background: lightblue;
       position: absolute;
       bottom: 50%;
       left: 0;
@@ -243,7 +244,7 @@ main {
     text-align: right;
     cursor: pointer;
     span {
-      color: #fff;
+      color: lightblue;
       font-size: 11px;
       line-height: 1;
       opacity: 1;
@@ -254,7 +255,7 @@ main {
       content: "";
       width: 100%;
       height: 1px;
-      background: #fff;
+      background: lightblue;
       position: absolute;
       top: 50%;
       left: 0;
@@ -266,7 +267,7 @@ main {
       content: "";
       width: 100%;
       height: 1px;
-      background: #fff;
+      background: lightblue;
       position: absolute;
       bottom: 50%;
       left: 0;
