@@ -8,27 +8,51 @@
 // 유저가 1~100 범위 밖에 숫자를 입력하면 알려준다. 기회를 깍지 않는다.
 // 유저가 이미 입력한 숫자를 또 입력하면, 알려준다, 기회를 깍지 않는다.
 
-const computerNum = 0;
+let computerNum = 0;
 const playButton = document.querySelector("#playButton");
 const userInput = document.querySelector("#userInput");
 const resultArea = document.querySelector("#resultArea");
+const resetButton = document.querySelector("#reset");
+let chances = 5;
+let gameOver = false;
+let chanceArea = document.querySelector("#chanceArea");
 
 playButton.addEventListener("click", play);
+resetButton.addEventListener("click", reset);
 
 function pickRandomNum() {
   computerNum = Math.floor(Math.random() * 100) + 1;
-  // 1~100까지가 되는 매직
+  console.log("정답", computerNum);
 }
+pickRandomNum();
 
 function play() {
-  let userValue = userInput.value;
+  const userValue = userInput.value;
+
+  chances--;
+  chanceArea.innerHTML = `남은기회:${chances}`;
+
+  console.log("chances,chance");
+
   if (userValue < computerNum) {
-    resultArea.textContent = "Up";
+    resultArea.innerHTML = "up";
   } else if (userValue > computerNum) {
-    resultArea.textContent = "Down";
+    resultArea.innerHTML = "down";
   } else {
-    resultArea.textContent = "정답!!";
+    resultArea.innerHTML = "정답";
+  }
+  if (chances < 1) {
+    gameOver: true;
+  }
+  if (gameOver == true) {
+    playButton.disabled = true;
   }
 }
 
-pickRandomNum();
+function reset() {
+  //userInput 창이 깨끗하게 정리되고
+  userInput.value = "";
+  // 새로운 번호가 생성되고
+  pickRandomNum();
+  resultArea.innerHTML = "다시도전!!";
+}

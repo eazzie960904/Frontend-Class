@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
 import MainPage from "./components/MainPage";
+import MobileMain from "./pages/MobileMain";
 
 function App() {
   return (
     <div>
-      <MainPage />
+      <MobileMain />
     </div>
   );
 }
