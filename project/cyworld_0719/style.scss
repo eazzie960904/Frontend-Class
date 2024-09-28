@@ -2,12 +2,12 @@
 @import "./reset.scss";
 
 /* built-in-function */
-$color:(
-    bg-dark-color: #000,
-    bg-gray-color: lightgray,
-    bg-light-color: #fff,
-    accent-color: lightcoral,
-    theme-color: lightblue,
+$color: (
+  bg-dark-color: #000,
+  bg-gray-color: lightgray,
+  bg-light-color: #fff,
+  accent-color: lightcoral,
+  theme-color: lightblue,
 );
 
 $size: 14px;
@@ -81,7 +81,7 @@ $size: 14px;
         align-items: center;
         gap: 6px;
       }
-      .seflIntroduce{
+      .seflIntroduce {
         padding-top: 10px;
       }
     }
@@ -151,7 +151,7 @@ $size: 14px;
     line-height: 30px;
     border-radius: 0 10px 10px 0;
     font-size: $size;
-    border: 1px solid lightcoral;
+    border: 1px solid #eee;
     cursor: pointer;
   }
 }
