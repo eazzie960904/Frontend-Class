@@ -67,6 +67,21 @@ $(".myslider").slick({
   ],
 });
 
+//Hover
+const circles = document.querySelectorAll(".circle");
+const iconArea = document.querySelector(".iconArea");
+
+circles.forEach((circle) => {
+  circle.addEventListener("mouseenter", function () {
+    let changeImage = this.getAttribute("data-img");
+    iconArea.style.backgroundImage = `url("${changeImage}")`;
+  });
+
+  circle.addEventListener("mouseleave", function () {
+    iconArea.style.backgroundImage = ``;
+  });
+});
+
 //ScrollTo
 $(".gototop, .gnb a").click(function () {
   $.scrollTo(this.hash || 0, 800);
