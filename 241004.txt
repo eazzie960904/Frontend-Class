@@ -1,0 +1,68 @@
+1. 카카오톡 공유하기
+
+2. 카카오 AdFit 광고 설정
+
+3. 또다른 Deploy방법
+- Netlify -> git-hub 친밀함
+- Firebase
+4. 네이버 포털 사이트 SEO 설정
+Search Engine Optimization
+https://searchadvisor.naver.com
+웹마스터 도구
+사이트 소유확인
+HTML 태그
+푸쉬
+
+HTML 파일업로드
+소유확인
+
+
+git 연결
+git init
+git repository 생성
+git remote add origin 주소
+git remote -v
+(fetch push * U 떠야함)
+
+git add . (A로바뀜)
+git status (초록색 파일 뜸)
+
+파일 보내기
+git commit -m "날짜" (왼쪽 메시지 사라짐)
+git push origin master
+
+
+배포(netlify) https://www.netlify.com/
+add new site
+import an existing project
+git hub
+
+gabia : 나만의 도메인 주소 만들기
+
+ @media screen and (max-width:780px){
+    
+  }
+재배포
+소스제어
+git responsive01
+커밋
+우측 점->push
+
+kakao developers
+카카오톡 공유
+문서>메시지>카카오톡 공유:javascript
+
+KakaoShareButton.jsx
+내애플리케이션 > 앱키 > Java Scrip키
+Javascript 시작하기
+초기화
+
+kakao developers
+내 애플리케이션 >앱설정>플랫폼
+
+광고단위 생성
+
+과제
+1. 하고싶은 분야
+2. 포트폴리오 컨셉정해오기 3개
+3. 회사 3개
