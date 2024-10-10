@@ -4,9 +4,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 200px;
   .signinIcon {
+    #secondLogo {
+      padding-bottom: 13px;
+      animation: recycle 1s ease-out;
+    }
+    #thirdLogo {
+      padding-bottom: 13px;
+    }
+  }
+  .signinDesc {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 38px;
+    }
+  }
+}
+
+@keyframes recycle {
+  100% {
+    transform: rotate(-360deg);
+    transform-origin: center;
   }
 }

@@ -1,1 +1,30 @@
-.container{width:100%;height:100vh;display:flex;justify-content:center;align-items:center;gap:50px}.container .signinIcon{display:flex;flex-direction:column}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+.container .signinIcon #secondLogo {
+  padding-bottom: 13px;
+  animation: recycle 1s ease-out;
+}
+.container .signinIcon #thirdLogo {
+  padding-bottom: 13px;
+}
+.container .signinDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .signinDesc h1 {
+  font-size: 38px;
+}
+
+@keyframes recycle {
+  100% {
+    transform: rotate(-360deg);
+    transform-origin: center;
+  }
+}
