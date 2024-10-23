@@ -18,7 +18,6 @@ header {
   z-index: 10000;
 }
 header .banner {
-  background: #000;
   height: 40px;
   transition: all 0.5s;
 }
@@ -26,11 +25,12 @@ header .banner .lnb {
   display: flex;
   align-items: center;
   height: 100%;
-  justify-content: flex-end;
+  justify-content: center;
+  margin-top: 30px;
 }
 header .banner .lnb a {
-  color: #ddd;
-  margin-right: 10px;
+  color: #000;
+  margin-right: 50px;
 }
 header .banner .lnb a em {
   color: #bbb;
@@ -41,18 +41,54 @@ header nav {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  margin-top: 20px;
-  /* border: 1px solid #f00; */
 }
-header nav .gnb {
+header nav .gnb .mainbar {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  border: 1px solid #eee;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background: none;
+}
+header nav .gnb .mainbar .location {
+  border-right: 1px solid #eee;
+}
+header nav .gnb .mainbar .date {
+  border-right: 1px solid #eee;
+}
+header nav .gnb .mainbar .checkout {
+  border-right: 1px solid #eee;
+  padding: 0 20px;
+}
+header nav .gnb .mainbar .traveler {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .gnb .mainbar .traveler i {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background: #ff385c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .sidebar {
+  display: flex;
+  align-items: center;
   gap: 20px;
 }
-header nav .gnb li a {
-  color: #fff;
-}
-header nav .gnb li a:hover {
-  color: crimson;
+header nav .sidebar #personal {
+  display: flex;
+  gap: 15px;
+  background: none;
+  padding: 13px;
+  border: 1px solid lightgrey;
+  border-radius: 30px;
+  font-size: 1.3em;
+  color: darkgray;
 }
 header .trigger {
   display: none;
@@ -483,7 +519,7 @@ footer .footer_content ul.help li:last-child {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: linear-gradient(45deg, skyblue, #c1e4f2);
+  background: #ff385c;
   color: #fff;
   font-size: 26px;
   text-align: center;
