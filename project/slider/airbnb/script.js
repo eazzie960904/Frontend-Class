@@ -51,15 +51,15 @@ $(".myslider").slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 5,
+        slidesToScroll: 5,
       },
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 5,
+        slidesToScroll: 5,
       },
     },
   ],

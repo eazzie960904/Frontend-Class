@@ -276,32 +276,7 @@ header.active nav {
 
 /* Blog */
 .blog {
-  padding: 100px 0;
-}
-.blog .blog_content .blog_header h6 {
-  text-transform: uppercase;
-  font-size: 16px;
-  color: dodgerblue;
-}
-.blog .blog_content .blog_header h2 {
-  text-transform: uppercase;
-  font-size: 48px;
-  margin: 50px 0;
-}
-.blog .blog_content .blog_header p {
-  font-size: 28px;
-  line-height: 1.6rem;
-  margin-bottom: 16px;
-}
-.blog .blog_content .blog_header .btn-explore {
-  color: crimson;
-  font-weight: 500;
-}
-.blog .blog_content .blog_header .btn-explore img {
-  transition: all 0.3s;
-}
-.blog .blog_content .blog_header .btn-explore:hover img {
-  margin-left: 15px;
+  padding: 100px 200px;
 }
 .blog .blog_content .divider {
   border: none;
@@ -326,11 +301,10 @@ header.active nav {
   gap: 20px;
 }
 .blog .blog_content .post_content .recent_post_items .post_item .post_image {
-  width: 364px;
-  height: 100%;
+  width: 350px;
+  height: 250px;
   border-radius: 30px 0 30px 0;
   overflow: hidden;
-  flex: 1;
 }
 .blog .blog_content .post_content .recent_post_items .post_item .post_image img {
   width: 100%;
@@ -344,6 +318,7 @@ header.active nav {
 .blog .blog_content .post_content .recent_post_items .post_item .post_desc h3 {
   text-transform: uppercase;
   font-size: 24px;
+  margin-bottom: 20px;
 }
 .blog .blog_content .post_content .recent_post_items .post_item .post_desc p {
   font-size: 18px;
@@ -361,7 +336,7 @@ header.active nav {
 .blog .blog_content .post_content .shared_post_items h6 {
   font-size: 16px;
   text-transform: uppercase;
-  color: dodgerblue;
+  color: #2ecc71;
   margin-bottom: 30px;
 }
 .blog .blog_content .post_content .shared_post_items .post_item {
@@ -370,8 +345,8 @@ header.active nav {
   gap: 20px;
 }
 .blog .blog_content .post_content .shared_post_items .post_item .post_image {
-  width: 360px;
-  height: 100%;
+  width: 300px;
+  height: 200px;
   border-radius: 30px 0 30px 0;
   overflow: hidden;
 }
@@ -384,6 +359,7 @@ header.active nav {
 .blog .blog_content .post_content .shared_post_items .post_item .post_desc h3 {
   text-transform: uppercase;
   font-size: 24px;
+  margin-bottom: 20px;
 }
 .blog .blog_content .post_content .shared_post_items .post_item .post_desc p {
   font-size: 18px;
@@ -495,7 +471,12 @@ footer .footer_bottom ul > li > a:hover {
   bottom: 20px;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1500px) {
+  .blog {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 900px) {
   /* common */
   .inner {
     width: 100%;
@@ -508,6 +489,12 @@ footer .footer_bottom ul > li > a:hover {
   header nav {
     width: 100%;
     padding: 0 20px;
+  }
+  header nav .logo {
+    margin-top: 10px;
+  }
+  header nav .rightSection {
+    display: none;
   }
   header nav .gnb {
     width: 250px;
@@ -579,6 +566,9 @@ footer .footer_bottom ul > li > a:hover {
     flex-direction: column;
   }
   /* Ranking */
+  .ranking {
+    padding: 0;
+  }
   .ranking .ranking_content {
     padding: 50px 0;
   }
@@ -587,11 +577,13 @@ footer .footer_bottom ul > li > a:hover {
   }
   .ranking .ranking_content .items .item {
     width: 100%;
+    height: 500px;
     border-radius: 7px;
     margin-bottom: 25px;
   }
   .ranking .ranking_content .items .item .up-image {
     width: 100%;
+    height: 350px;
   }
   /* Testimonial */
   .testimonial {
