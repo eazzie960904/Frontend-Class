@@ -19,41 +19,91 @@ header {
   width: 100%;
   z-index: 10000;
   .banner {
-    background: #000;
-    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 60px;
     transition: all 0.5s;
     .lnb {
+      width: 1300px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
       height: 100%;
-      justify-content: flex-end;
+      font-size: 0.8em;
+
+      #playZone {
+        background: #abd9ff;
+        padding: 5px 13px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px #eee;
+      }
+      #searchBar {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        button {
+          border: none;
+          background: none;
+          color: lightskyblue;
+          margin-left: 10px;
+        }
+      }
+      #rightSide {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        div {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
       a {
-        color: #ddd;
+        color: #000;
         margin-right: 10px;
         em {
-          color: #bbb;
+          color: #000;
         }
       }
     }
   }
   nav {
-    width: 1300px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 20px;
+    background: #ffd502;
+    padding: 10px 10%;
     /* border: 1px solid #f00; */
-    .gnb {
+    .navBar {
       display: flex;
-      gap: 20px;
-      li {
-        a {
-          color: #fff;
-          &:hover {
-            color: crimson;
+      align-items: center;
+      gap: 80px;
+      .gnb {
+        display: flex;
+        gap: 20px;
+        li {
+          a {
+            color: #000;
+            font-weight: 500;
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
+      }
+    }
+    .rightBar {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-size: 1.3em;
+      .fa-magnifying-glass {
+        border-radius: 50%;
+        background: #fff;
+        padding: 12px;
       }
     }
   }
@@ -61,7 +111,7 @@ header {
     display: none;
   }
   &.active {
-    background: #fff;
+    background: #ffd502;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     .gnb li a {
       color: #000;
@@ -78,8 +128,8 @@ header {
 
 /* Intro */
 .intro {
-  height: 100vh;
-  background: url("./img/intro.jpg") center/cover no-repeat;
+  height: 80vh;
+  background: url("./img/main.PNG") center no-repeat;
   display: flex;
   align-items: center;
   .heading {
