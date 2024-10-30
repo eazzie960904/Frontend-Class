@@ -87,10 +87,18 @@ header {
         li {
           a {
             color: #000;
-            font-weight: 500;
+            font-weight: 450;
+            font-size: 1.1em;
             &:hover {
               text-decoration: underline;
             }
+          }
+          .christmas {
+            padding: 5px 10px;
+            background: white;
+            color: crimson;
+            border-radius: 5px;
+            font-weight: 300;
           }
         }
       }
@@ -147,44 +155,9 @@ header {
   }
 }
 
-/* About */
-.about_content {
-  display: flex;
-  padding: 150px 0;
-  div {
-    padding: 30px;
-    &.desc {
-      text-align: center;
-      flex: 3;
-      h2 {
-        font-size: 30px;
-      }
-      p {
-        font-size: 16px;
-        line-height: 1.7rem;
-        margin: 30px 0 40px;
-      }
-      a {
-        color: crimson;
-        font-weight: bold;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-    &.photo {
-      flex: 2;
-      img {
-        width: 100%;
-        border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
-      }
-    }
-  }
-}
-
 /* Ranking */
 .ranking {
-  background: #f8f8f8;
+  background: #e4e5ec;
   .ranking_content {
     padding: 100px 0;
     h2 {

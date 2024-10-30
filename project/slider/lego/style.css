@@ -87,10 +87,18 @@ header nav .navBar .gnb {
 }
 header nav .navBar .gnb li a {
   color: #000;
-  font-weight: 500;
+  font-weight: 450;
+  font-size: 1.1em;
 }
 header nav .navBar .gnb li a:hover {
   text-decoration: underline;
+}
+header nav .navBar .gnb li .christmas {
+  padding: 5px 10px;
+  background: white;
+  color: crimson;
+  border-radius: 5px;
+  font-weight: 300;
 }
 header nav .rightBar {
   display: flex;
@@ -142,44 +150,9 @@ header.active nav {
   padding: 0 150px;
 }
 
-/* About */
-.about_content {
-  display: flex;
-  padding: 150px 0;
-}
-.about_content div {
-  padding: 30px;
-}
-.about_content div.desc {
-  text-align: center;
-  flex: 3;
-}
-.about_content div.desc h2 {
-  font-size: 30px;
-}
-.about_content div.desc p {
-  font-size: 16px;
-  line-height: 1.7rem;
-  margin: 30px 0 40px;
-}
-.about_content div.desc a {
-  color: crimson;
-  font-weight: bold;
-}
-.about_content div.desc a:hover {
-  text-decoration: underline;
-}
-.about_content div.photo {
-  flex: 2;
-}
-.about_content div.photo img {
-  width: 100%;
-  border-radius: 40% 60% 65% 35%/40% 45% 55% 60%;
-}
-
 /* Ranking */
 .ranking {
-  background: #f8f8f8;
+  background: #e4e5ec;
 }
 .ranking .ranking_content {
   padding: 100px 0;
