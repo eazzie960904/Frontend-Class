@@ -140,25 +140,13 @@ header {
   background: url("./img/main.PNG") center no-repeat;
   display: flex;
   align-items: center;
-  .heading {
-    text-align: center;
-    color: #fff;
-    h1 {
-      font-size: 70px;
-      margin-bottom: 40px;
-    }
-    p {
-      font-size: 22px;
-      line-height: 1.5rem;
-      padding: 0 150px;
-    }
-  }
 }
 
 /* Ranking */
 .ranking {
-  background: #e4e5ec;
   .ranking_content {
+    width: 1300px;
+    background: #e4e5ec;
     padding: 100px 0;
     h2 {
       font-size: 30px;

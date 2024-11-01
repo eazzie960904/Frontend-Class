@@ -11,6 +11,9 @@ body {
     right: 50px;
     bottom: 0;
     .second {
+      position: absolute;
+      right: 70%;
+      bottom: 0;
       .color {
         font-size: 25px;
       }
@@ -66,7 +69,9 @@ body {
       width: 300px;
       height: 550px;
       border: 10px solid #000;
-      border-radius: 10%;
+      border-bottom: none;
+      border-radius: 10% 10% 0 0;
+
       background: #fff;
       img {
         width: 300px;

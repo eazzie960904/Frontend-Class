@@ -136,25 +136,11 @@ header.active nav {
   display: flex;
   align-items: center;
 }
-.intro .heading {
-  text-align: center;
-  color: #fff;
-}
-.intro .heading h1 {
-  font-size: 70px;
-  margin-bottom: 40px;
-}
-.intro .heading p {
-  font-size: 22px;
-  line-height: 1.5rem;
-  padding: 0 150px;
-}
 
 /* Ranking */
-.ranking {
-  background: #e4e5ec;
-}
 .ranking .ranking_content {
+  width: 1300px;
+  background: #e4e5ec;
   padding: 100px 0;
 }
 .ranking .ranking_content h2 {
