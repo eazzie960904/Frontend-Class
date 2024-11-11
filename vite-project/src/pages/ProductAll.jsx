@@ -19,13 +19,7 @@ const ProductAll = () => {
   }, [query]);
   return (
     <Container>
-      <Row>
-        {productList.map((menu, index) => (
-          <Col key={index} lg={3}>
-            <ProductCard item={menu} />
-          </Col>
-        ))}
-      </Row>
+      <Row></Row>
     </Container>
   );
 };

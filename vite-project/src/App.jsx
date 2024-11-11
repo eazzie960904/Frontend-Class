@@ -25,6 +25,9 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+  body{
+      background: #1b1b1b;
+      }
 `;
 
 const App = () => {

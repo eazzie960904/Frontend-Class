@@ -9,18 +9,19 @@ const Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 10px;
   margin-bottom: 10px;
+  background: #1b1b1b;
+  color: #a5a5a5;
+  // position: fixed;
 `;
 
 const HeaderTop = styled.div`
-  height: 30px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: flex-end;
-  gap: 20px;
+  gap: 50px;
 `;
 
 const SearchBox = styled.div`
@@ -47,12 +48,10 @@ const LoginAuth = styled.div`
   display: flex;
   gap: 10px;
   cursor: pointer;
+  color: white;
 `;
 
 const Logo = styled.div`
-  width: 300px;
-  height: 50px;
-  margin-bottom: 20px;
   & > a > img {
     width: 100%;
     height: 100%;
@@ -61,6 +60,7 @@ const Logo = styled.div`
 `;
 
 const MenuArea = styled.div`
+  font-size: 1.2em;
   & > ul {
     display: flex;
     gap: 20px;
@@ -68,14 +68,16 @@ const MenuArea = styled.div`
 `;
 
 const menuList = [
-  "여성",
-  "남성",
-  "추천",
-  "브랜드",
-  "발매",
-  "랭킹",
-  "세일",
-  "무탠 슈퍼세일",
+  "뉴클래식",
+  "드라마",
+  "예능",
+  "영화",
+  "애니",
+  "해외시리즈",
+  "시사교양",
+  "키즈",
+  "영화플러스",
+  "live",
 ];
 
 const Navbar = ({ authenticate, setAuthenticate }) => {
@@ -86,6 +88,20 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
   return (
     <Wrapper>
       <HeaderTop>
+        <Logo>
+          <Link to={"/"}>
+            <img src="/logowhite.png" alt="wavve" />
+          </Link>
+        </Logo>
+        <MenuArea>
+          <ul>
+            {menuList.map((menu, index) => (
+              <li key={index}>
+                <a href="#">{menu}</a>
+              </li>
+            ))}
+          </ul>
+        </MenuArea>
         <SearchBox>
           <FontAwesomeIcon icon={faSearch} />
           <input type="text" placeholder="제품검색" onKeyUp={onCheckEnter} />
@@ -93,32 +109,13 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
         {authenticate ? (
           <LoginAuth onClick={() => setAuthenticate(false)}>
             <FontAwesomeIcon icon={faUser} />
-            <span>로그아웃</span>
           </LoginAuth>
         ) : (
           <LoginAuth onClick={() => navigate("/login")}>
             <FontAwesomeIcon icon={faUser} />
-            <span>로그인</span>
           </LoginAuth>
         )}
       </HeaderTop>
-      <Logo>
-        <Link to={"/"}>
-          <img
-            src="https://menu.mt.co.kr/moneyweek/thumb/2020/08/21/06/2020082114368021238_2.jpg"
-            alt="musinsa"
-          />
-        </Link>
-      </Logo>
-      <MenuArea>
-        <ul>
-          {menuList.map((menu, index) => (
-            <li key={index}>
-              <a href="#">{menu}</a>
-            </li>
-          ))}
-        </ul>
-      </MenuArea>
     </Wrapper>
   );
 };
