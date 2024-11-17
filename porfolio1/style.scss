@@ -1,0 +1,47 @@
+.main {
+  img {
+    width: 100%;
+  }
+  .intro {
+    width: 70%;
+    height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    .mainTitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5em;
+      text-align: center;
+    }
+    .mainDesc {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      padding: 30px;
+      .snsLink {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          cursor: pointer;
+          &:hover {
+            color: yellow;
+          }
+        }
+      }
+      .subDesc {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+}
