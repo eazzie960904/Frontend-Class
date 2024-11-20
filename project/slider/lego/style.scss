@@ -144,9 +144,8 @@ header {
 
 /* Ranking */
 .ranking {
+  background: #11a3a1;
   .ranking_content {
-    width: 1300px;
-    background: #e4e5ec;
     padding: 100px 0;
     h2 {
       font-size: 30px;
@@ -159,10 +158,8 @@ header {
       .item {
         width: 390px;
         height: 600px;
-        background: #fff;
         border-radius: 30px 0 30px 0;
         overflow: hidden;
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
         .up-image {
           width: 390px;
           height: 285px;
@@ -173,29 +170,24 @@ header {
           }
         }
         .down-desc {
+          text-align: center;
           padding: 25px;
           padding-top: 50px;
           .badge {
             font-size: 16px;
             padding: 2px 10px;
             color: #fff;
-            &.must {
-              background: crimson;
-            }
-            &.good {
-              background: dodgerblue;
-            }
           }
           h3 {
             font-size: 22px;
             margin: 15px 0;
           }
           p {
-            font-size: 16px;
+            font-size: 14px;
             margin-bottom: 16px;
           }
           .btn-explore {
-            color: crimson;
+            color: #000;
             font-weight: 500;
             img {
               transition: all 0.3s;
@@ -273,11 +265,7 @@ header {
   position: relative;
   &::before {
     content: "";
-    background: linear-gradient(
-      to right,
-      rgba(160, 8, 160, 0.5),
-      rgba(6, 87, 24, 0.8)
-    );
+    background: #11a3a1;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -305,32 +293,14 @@ header {
 /* Blog */
 .blog {
   padding: 100px 0;
+  background: #8dd8d7;
   .blog_content {
     .blog_header {
-      h6 {
-        text-transform: uppercase;
-        font-size: 16px;
-        color: dodgerblue;
-      }
       h2 {
         text-transform: uppercase;
-        font-size: 48px;
+        font-size: 35px;
+        font-weight: 300;
         margin: 50px 0;
-      }
-      p {
-        font-size: 28px;
-        line-height: 1.6rem;
-        margin-bottom: 16px;
-      }
-      .btn-explore {
-        color: crimson;
-        font-weight: 500;
-        img {
-          transition: all 0.3s;
-        }
-        &:hover img {
-          margin-left: 15px;
-        }
       }
     }
     .divider {
@@ -341,65 +311,19 @@ header {
     .post_content {
       display: flex;
       gap: 20px;
+      text-align: center;
       .recent_post_items {
-        flex: 4;
-        h6 {
-          font-size: 16px;
-          text-transform: uppercase;
-          color: dodgerblue;
-          margin-bottom: 30px;
-        }
-        .post_item {
-          display: flex;
-          gap: 20px;
-          .post_image {
-            width: 364px;
-            height: 100%;
-            border-radius: 30px 0 30px 0;
-            overflow: hidden;
-            flex: 1;
-            img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-          }
-          .post_desc {
-            flex: 1;
-            h3 {
-              text-transform: uppercase;
-              font-size: 24px;
-            }
-            p {
-              font-size: 18px;
-              line-height: 1.6rem;
-              span {
-                display: block;
-                margin-top: 20px;
-                font-size: 14px;
-                color: #6d6d6d;
-              }
-            }
-          }
-        }
-      }
-      .shared_post_items {
-        flex: 1;
-        h6 {
-          font-size: 16px;
-          text-transform: uppercase;
-          color: dodgerblue;
-          margin-bottom: 30px;
-        }
+        display: flex;
+        gap: 20px;
         .post_item {
           display: flex;
           flex-direction: column;
           gap: 20px;
           .post_image {
-            width: 360px;
-            height: 100%;
-            border-radius: 30px 0 30px 0;
+            width: 300px;
+            height: 200px;
             overflow: hidden;
+            flex: 1;
             img {
               width: 100%;
               height: 100%;
@@ -407,25 +331,61 @@ header {
             }
           }
           .post_desc {
+            flex: 1;
             h3 {
               text-transform: uppercase;
-              font-size: 24px;
+              font-size: 20px;
+              font-weight: normal;
+              padding-bottom: 10px;
             }
             p {
-              font-size: 18px;
+              font-size: 15px;
               line-height: 1.6rem;
               span {
                 display: block;
                 margin-top: 20px;
                 font-size: 14px;
                 color: #6d6d6d;
+                cursor: pointer;
               }
             }
           }
-          &:nth-of-type(1) {
-            margin-bottom: 50px;
-          }
         }
+      }
+    }
+  }
+}
+
+/* About */
+.about_content {
+  display: flex;
+  padding: 150px 0;
+  div {
+    padding: 30px;
+    &.desc {
+      text-align: center;
+      flex: 3;
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.7rem;
+        margin: 30px 0 40px;
+      }
+      a {
+        color: crimson;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &.photo {
+      flex: 2;
+      img {
+        width: 100%;
+        border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
       }
     }
   }
