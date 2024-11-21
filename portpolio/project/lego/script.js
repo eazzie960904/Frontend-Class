@@ -36,8 +36,8 @@ $(".myslider").slick({
   infinite: true,
   autoplay: true,
   speed: 1000,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 5,
+  slidesToScroll: 5,
   responsive: [
     {
       breakpoint: 1024,
