@@ -131,7 +131,8 @@ header.active nav {
 
 /* Intro */
 .intro {
-  height: 80vh;
+  width: 100%;
+  height: 100vh;
   margin-top: 130px;
   background: url("./img/main.PNG") center/cover no-repeat;
   display: flex;
@@ -201,47 +202,45 @@ header.active nav {
 
 /* Testimonial */
 .testimonial {
+  width: 100%;
+  height: 100%;
   background: #8dd8d7;
-  padding: 100px 0;
+  padding: 100px;
 }
-.testimonial .testimonial_content {
+.testimonial .inner .testimonial_content {
+  width: 100%;
+  height: 500px;
   text-align: left;
 }
-.testimonial .testimonial_content h2 {
+.testimonial .inner .testimonial_content h2 {
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.testimonial .testimonial_content .myslider > div {
+.testimonial .inner .testimonial_content .myslider {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  border: 1px solid #f00;
+  overflow: hidden;
 }
-.testimonial .testimonial_content .myslider > div .client {
+.testimonial .inner .testimonial_content .myslider .client {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
-  margin-right: 100px;
+  overflow: hidden;
+  background: #fff;
 }
-.testimonial .testimonial_content .myslider > div .client img {
-  width: 150%;
-  height: 500px;
-}
-.testimonial .testimonial_content .myslider > div .client span {
-  font-size: 18px;
-}
-.testimonial .testimonial_content .myslider > div .client span b {
-  display: block;
-}
-.testimonial .testimonial_content .myslider > div .comment {
-  text-align: center;
-  width: 74%;
-  font-size: 16px;
-  line-height: 1.6rem;
-  /* padding: 0 100px; */
+.testimonial .inner .testimonial_content .myslider .client img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* CallAction */
@@ -425,6 +424,7 @@ header.active nav {
 /* Footer */
 footer {
   background: #201d48;
+  height: 80vh;
   padding: 100px 0;
   color: #fff;
 }
@@ -434,23 +434,62 @@ footer .footer_content {
 }
 footer .footer_content ul {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer_content ul li {
+  font-size: 1.1em;
 }
 footer .footer_content ul li:first-child {
-  color: #d9d9d9;
+  color: #fff;
+  font-size: 1.2em;
   font-weight: 500;
 }
 footer .footer_content ul li a {
-  color: #959595;
+  color: #fff;
 }
 footer .footer_content ul li a:hover {
   text-decoration: underline;
 }
-footer .footer_content ul.help li {
-  color: #959595;
+footer .footer_subscrip {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
 }
-footer .footer_content ul.help li:last-child {
-  color: #eee;
-  margin-top: 38px;
+footer .footer_subscrip .footer_emailsubsc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer_subscrip .footer_emailsubsc .footer_email {
+  display: flex;
+  gap: none;
+  height: 50px;
+}
+footer .footer_subscrip .footer_emailsubsc .footer_email .footer_email_input {
+  border: none;
+  padding-left: 20px;
+}
+footer .footer_subscrip .footer_emailsubsc .footer_email button {
+  width: 50px;
+  background: #e96f14;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 1.5em;
+}
+footer .footer_descrip {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer_descrip .footer_personal {
+  display: flex;
+  gap: 30px;
+  cursor: pointer;
+}
+footer .footer_descrip .footer_personal a:hover {
+  text-decoration: underline;
 }
 
 /* GotoTop */
@@ -548,6 +587,9 @@ footer .footer_content ul.help li:last-child {
     transform: rotate(-45deg);
   }
   /* Intro */
+  .intro {
+    margin-top: 50px;
+  }
   .intro .heading h1 {
     font-size: 40px;
   }
@@ -595,6 +637,10 @@ footer .footer_content ul.help li:last-child {
     font-size: 20px;
   }
   .blog .blog_content .post_content {
+    flex-direction: column;
+  }
+  .blog .blog_content .post_content .recent_post_items,
+  .blog .blog_content .post_content .shared_post_items {
     flex-direction: column;
   }
   .blog .blog_content .post_content .recent_post_items .post_item,

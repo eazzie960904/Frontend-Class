@@ -136,7 +136,8 @@ header {
 
 /* Intro */
 .intro {
-  height: 80vh;
+  width: 100%;
+  height: 100vh;
   margin-top: 130px;
   background: url("./img/main.PNG") center/cover no-repeat;
   display: flex;
@@ -205,45 +206,42 @@ header {
 
 /* Testimonial */
 .testimonial {
+  width: 100%;
+  height: 100%;
   background: #8dd8d7;
-  padding: 100px 0;
-  .testimonial_content {
-    text-align: left;
-    h2 {
-      font-size: 30px;
-      font-weight: 300;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-    .myslider {
-      > div {
+  padding: 100px;
+  .inner {
+    .testimonial_content {
+      width: 100%;
+      height: 500px;
+      text-align: left;
+      h2 {
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      .myslider {
+        width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        border: 1px solid #f00;
+        overflow: hidden;
         .client {
+          width: 100%;
+          height: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
-          gap: 5px;
-          margin-right: 100px;
+          overflow: hidden;
+          background: #fff;
           img {
-            width: 150%;
-            height: 500px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
-          span {
-            font-size: 18px;
-            b {
-              display: block;
-            }
-          }
-        }
-        .comment {
-          text-align: center;
-          width: 74%;
-          font-size: 16px;
-          line-height: 1.6rem;
-          /* padding: 0 100px; */
         }
       }
     }
@@ -436,6 +434,7 @@ header {
 /* Footer */
 footer {
   background: #201d48;
+  height: 80vh;
   padding: 100px 0;
   color: #fff;
   .footer_content {
@@ -443,25 +442,62 @@ footer {
     justify-content: space-around;
     ul {
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
       li {
+        font-size: 1.1em;
         &:first-child {
-          color: #d9d9d9;
+          color: #fff;
+          font-size: 1.2em;
           font-weight: 500;
         }
         a {
-          color: #959595;
+          color: #fff;
           &:hover {
             text-decoration: underline;
           }
         }
       }
-      &.help {
-        li {
-          color: #959595;
-          &:last-child {
-            color: #eee;
-            margin-top: 38px;
-          }
+    }
+  }
+  .footer_subscrip {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    .footer_emailsubsc {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .footer_email {
+        display: flex;
+        gap: none;
+        height: 50px;
+        .footer_email_input {
+          border: none;
+          padding-left: 20px;
+        }
+        button {
+          width: 50px;
+          background: #e96f14;
+          border: none;
+          border-radius: 0 5px 5px 0;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+  .footer_descrip {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .footer_personal {
+      display: flex;
+      gap: 30px;
+      cursor: pointer;
+      a {
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
@@ -570,6 +606,7 @@ footer {
 
   /* Intro */
   .intro {
+    margin-top: 50px;
     .heading {
       h1 {
         font-size: 40px;
@@ -638,6 +675,7 @@ footer {
         flex-direction: column;
         .recent_post_items,
         .shared_post_items {
+          flex-direction: column;
           .post_item {
             flex-direction: column;
             .post_image {
