@@ -202,45 +202,46 @@ header.active nav {
 
 /* Testimonial */
 .testimonial {
-  width: 100%;
-  height: 100%;
-  background: #8dd8d7;
-  padding: 100px;
+  padding: 100px 0;
 }
-.testimonial .inner .testimonial_content {
-  width: 100%;
-  height: 500px;
+.testimonial .testimonial_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   text-align: left;
 }
-.testimonial .inner .testimonial_content h2 {
+.testimonial .testimonial_content h2 {
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
-.testimonial .inner .testimonial_content .myslider {
-  width: 100%;
-  height: 100%;
+.testimonial .testimonial_content .myslider > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #f00;
-  overflow: hidden;
+  flex-direction: column;
 }
-.testimonial .inner .testimonial_content .myslider .client {
-  width: 100%;
-  height: 100%;
+.testimonial .testimonial_content .myslider > div .client {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  background: #fff;
+  gap: 5px;
 }
-.testimonial .inner .testimonial_content .myslider .client img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.testimonial .testimonial_content .myslider > div .client img {
+  width: 200px;
+}
+.testimonial .testimonial_content .myslider > div .client span {
+  font-size: 18px;
+}
+.testimonial .testimonial_content .myslider > div .client span b {
+  display: block;
+}
+.testimonial .testimonial_content .myslider > div .comment {
+  text-align: center;
+  width: 74%;
+  font-size: 16px;
+  line-height: 1.6rem;
+  /* padding: 0 100px; */
 }
 
 /* CallAction */
@@ -526,29 +527,15 @@ footer .footer_descrip .footer_personal a:hover {
   }
   header nav {
     width: 100%;
-    padding: 0 20px;
-  }
-  header nav .gnb {
-    width: 250px;
-    height: 100vh;
-    background: #fff;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: -250px;
-    text-align: right;
-    padding: 80px 10px 0 0;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s;
-  }
-  header nav .gnb li a {
-    color: #000;
-    font-size: 18px;
-    display: block;
     padding: 10px;
   }
-  header nav .gnb.active {
-    right: 0;
+  header nav .navBar .gnb {
+    flex-direction: column;
+    position: fixed;
+    right: -250px;
+  }
+  header nav .rightBar {
+    display: none;
   }
   header .trigger {
     display: block;
@@ -664,8 +651,33 @@ footer .footer_descrip .footer_personal a:hover {
     margin-bottom: 10px;
   }
   /* Footer */
+  footer {
+    height: 100%;
+  }
   footer .footer_content {
     flex-direction: column;
     gap: 25px;
+  }
+  footer .footer_content .community {
+    display: flex;
+    align-items: center;
+  }
+  footer .footer_content .community img {
+    width: 30%;
+  }
+  footer .footer_subscrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  footer .footer_descrip {
+    font-size: 0.8em;
+    text-align: center;
+  }
+  footer .footer_descrip .footer_personal {
+    gap: 10px;
+    justify-content: center;
   }
 }
