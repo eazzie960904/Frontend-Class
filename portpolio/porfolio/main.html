@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./reset.css" />
-    <script src="./script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./script.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -127,10 +133,129 @@
       <div class="collectionsSubs">
         <div class="collectionsTitle">My collections</div>
         <div class="collectionsDesc">
-          <div class="collectionsDescImg"></div>
+          <div class="collectionsDescImg">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="./img/bread.png" alt="bread" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/bread2.png" alt="bread2" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/bread3.png" alt="bread3" />
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
           <div>Bamboo kitchen</div>
         </div>
       </div>
     </section>
+
+    <section class="bestItems">
+      <div class="bestItemsTitle">Shop my best Items</div>
+      <div class="bestItemsSubs">
+        <div class="bestItemsSubsBoxes">
+          <div class="bestItemsImg"></div>
+          <div class="bestItemsDesc">
+            <div class="bestItemsDescTitle"><b>Bamboo Led</b></div>
+            <div>29.0</div>
+          </div>
+        </div>
+        <div class="bestItemsSubsBoxes">
+          <div class="bestItemsImg"></div>
+          <div class="bestItemsDesc">
+            <div class="bestItemsDescTitle"><b>Bambook Led</b></div>
+            <div>29.0</div>
+          </div>
+        </div>
+        <div class="bestItemsSubsBoxes">
+          <div class="bestItemsImg"></div>
+          <div class="bestItemsDesc">
+            <div class="bestItemsDescTitle"><b>Bamboo Led</b></div>
+            <div>29.0</div>
+          </div>
+        </div>
+        <div class="bestItemsSubsBoxes">
+          <div class="bestItemsImg"></div>
+          <div class="bestItemsDesc">
+            <div class="bestItemsDescTitle"><b>Bamboo Led</b></div>
+            <div>29.0</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="description">
+      <div class="descriptionMain">
+        <div class="descriptionMainSubs">
+          <div class="descriptionMainSubsTitle">My Design</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+            laudantium libero.
+          </div>
+        </div>
+        <div class="descriptionMainSubs">
+          <div class="descriptionMainSubsTitle">Customize</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+            laudantium libero.
+          </div>
+        </div>
+        <div class="descriptionMainSubs">
+          <div class="descriptionMainSubsTitle">Honest Evaluation</div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+            laudantium libero.
+          </div>
+        </div>
+      </div>
+      <div class="descriptionImg"></div>
+    </section>
+
+    <section class="symbolMark">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+
+    <section class="market">
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+
+    <section class="follow">
+      <div class="followTitle">Follow Me</div>
+      <div class="followId">@eazzie_kang</div>
+    </section>
+
+    <footer>
+      <div class="footerDesc">
+        <div class="footerDescTitle">Join my mailing List</div>
+        <div>
+          get exclusive offers, grilling tips, recipes and all the latest update
+        </div>
+      </div>
+      <div class="footerEmail">
+        <input type="text" placeholder="your email address" />
+        <button>subscribe</button>
+      </div>
+    </footer>
   </body>
 </html>
