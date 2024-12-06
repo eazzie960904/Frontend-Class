@@ -221,175 +221,11 @@ body {
   font-size: 18px;
 }
 
-/* Blog */
-.blog {
-  padding: 100px 0;
-}
-.blog .blog_content .blog_header h6 {
-  text-transform: uppercase;
-  font-size: 16px;
-  color: dodgerblue;
-}
-.blog .blog_content .blog_header h2 {
-  text-transform: uppercase;
-  font-size: 48px;
-  margin: 50px 0;
-}
-.blog .blog_content .blog_header p {
-  font-size: 28px;
-  line-height: 1.6rem;
-  margin-bottom: 16px;
-}
-.blog .blog_content .blog_header .btn-explore {
-  color: crimson;
-  font-weight: 500;
-}
-.blog .blog_content .blog_header .btn-explore img {
-  transition: all 0.3s;
-}
-.blog .blog_content .blog_header .btn-explore:hover img {
-  margin-left: 15px;
-}
-.blog .blog_content .divider {
-  border: none;
-  border-bottom: 1px solid #ddd;
-  margin: 50px 0;
-}
-.blog .blog_content .post_content {
-  display: flex;
-  gap: 20px;
-}
-.blog .blog_content .post_content .recent_post_items {
-  flex: 4;
-}
-.blog .blog_content .post_content .recent_post_items h6 {
-  font-size: 16px;
-  text-transform: uppercase;
-  color: dodgerblue;
-  margin-bottom: 30px;
-}
-.blog .blog_content .post_content .recent_post_items .post_item {
-  display: flex;
-  gap: 20px;
-}
-.blog .blog_content .post_content .recent_post_items .post_item .post_image {
-  width: 364px;
-  height: 100%;
-  border-radius: 30px 0 30px 0;
-  overflow: hidden;
-  flex: 1;
-}
-.blog .blog_content .post_content .recent_post_items .post_item .post_image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.blog .blog_content .post_content .recent_post_items .post_item .post_desc {
-  flex: 1;
-}
-.blog .blog_content .post_content .recent_post_items .post_item .post_desc h3 {
-  text-transform: uppercase;
-  font-size: 24px;
-}
-.blog .blog_content .post_content .recent_post_items .post_item .post_desc p {
-  font-size: 18px;
-  line-height: 1.6rem;
-}
-.blog .blog_content .post_content .recent_post_items .post_item .post_desc p span {
-  display: block;
-  margin-top: 20px;
-  font-size: 14px;
-  color: #6d6d6d;
-}
-.blog .blog_content .post_content .shared_post_items {
-  flex: 1;
-}
-.blog .blog_content .post_content .shared_post_items h6 {
-  font-size: 16px;
-  text-transform: uppercase;
-  color: dodgerblue;
-  margin-bottom: 30px;
-}
-.blog .blog_content .post_content .shared_post_items .post_item {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.blog .blog_content .post_content .shared_post_items .post_item .post_image {
-  width: 360px;
-  height: 100%;
-  border-radius: 30px 0 30px 0;
-  overflow: hidden;
-}
-.blog .blog_content .post_content .shared_post_items .post_item .post_image img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.blog .blog_content .post_content .shared_post_items .post_item .post_desc h3 {
-  text-transform: uppercase;
-  font-size: 24px;
-}
-.blog .blog_content .post_content .shared_post_items .post_item .post_desc p {
-  font-size: 18px;
-  line-height: 1.6rem;
-}
-.blog .blog_content .post_content .shared_post_items .post_item .post_desc p span {
-  display: block;
-  margin-top: 20px;
-  font-size: 14px;
-  color: #6d6d6d;
-}
-.blog .blog_content .post_content .shared_post_items .post_item:nth-of-type(1) {
-  margin-bottom: 50px;
-}
-
-/* Festival */
-.festival {
-  width: 100%;
-  height: 270px;
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.festival .festival_heading {
-  text-align: center;
-}
-.festival .festival_heading h3 {
-  color: #fff;
-  font-size: 26px;
-  font-weight: 300;
-  margin-bottom: 30px;
-}
-.festival .festival_heading h3 span {
-  font-weight: 500;
-}
-.festival .festival_heading .btns a {
-  display: inline-block;
-  width: 200px;
-  background: #fff;
-  margin: 5px;
-  padding: 6px;
-  border-radius: 5px;
-  font-size: 16px;
-}
-.festival .festival_heading .btns a:nth-child(1) {
-  background: #fac53b;
-  color: #fff;
-}
-.festival .festival_heading .btns a:nth-child(2) {
-  background: #ededed;
-  color: #333;
-}
-
 /* Footer */
 footer {
-  background: #000;
+  background: #f2f2f2;
   padding: 30px 0;
-  color: #fff;
+  color: #616161;
 }
 footer .footer_content {
   display: flex;
@@ -399,8 +235,8 @@ footer .footer_content ul {
   text-align: center;
 }
 footer .footer_content ul li:first-child {
-  color: #d9d9d9;
-  font-weight: 500;
+  color: #616161;
+  font-weight: 700;
 }
 footer .footer_content ul li a {
   color: #959595;
